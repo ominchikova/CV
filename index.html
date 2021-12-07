@@ -1,56 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title> Oksana CV</title>
 </head>
 <body>
-    <div class="text"> 
-    <table cellspasing="15">
-        <tr>
-            <td> <img src="./foto/IMG_3593.jpg" alt="фото" width="200"></td>
-            <td><h1>Оксана Минчикова</h1></td>
-           </tr>
-    </table>
+    <class="container">
+    <div class="info"> 
+      <p><img src="./foto/IMG_3593.jpg" alt="фото" class="avatar"></p>
+      <h1>Оксана Минчикова</h1>
+           
+        <p>Я делаю первые шаги в <strong>Frontend</strong>  разработке </p>
+        <p>Люблю путешествовать,изучать английский язык, программировать</p>
+  <div class="card">
+      <div class="card bg-yellow">
+        <h2>Мои социальные сети</h2>
+                   <a href="http://instagram.com/oksicorporation" target="_blank">Instagram</a> 
+                
+       
+                   <a href="http://instagram.com/oksicorporation" target="_blank">Instagram</a> 
+  </div>
+      </div>
     </div>
-        <div>
-    <p><em>Я делаю первые шаги в <strong>Frontend</strong>  разработке</em>  </p>
-    <p>Люблю путешествовать,изучать английский язык, программировать</p>
-    </div>
-           <hr>
-    
-    <div class="social"><h2>Мои социальные сети</h2>
-    <ul type="square" >
-        <li><a href="http://instagram.com/oksicorporation" target="_blank">Instagram</a> </li>
-        <li></li>
-    </ul>
-    <hr> 
-</div>
-    <h2>Мои хобби</h2>
+
+    <div class="card bg-green">
+      <h2 class="list">Мои хобби</h2>
         <ol type="a" >
             <li>Семья</li>
             <li>Авто</li>
             <li>Путешествие</li>
             <li>Макраме:-</li>
         </ol>
-        <hr>
+    </div>
+    <div class="card bg-red">
         <h2>Опыт работы</h2>
-        <table >
-            <thead>
-                <tr>
+        <table  class="table">
+             <tr>
                 <th>Компания</th>
                 <th>Должность</th>
                 <th>Год</th>
             </tr>
-            </thead>
-           
-                <tr>
+            <tr>
                 <td>Торговое предприятие</td>
                 <td>Зав.магазином</td>
                 <td>2007-2009</td>
@@ -60,30 +52,35 @@
                 <td>Товаровед</td>
                 <td>2017-2021</td>
             </tr>
+            <tr>
+                <td>Компьютерная академия ШАГ</td>
+                <td>Фронтенд</td>
+                <td>2021-2022</td>
+            </tr>
             
         </table>
-        <hr>
-                <h2>Связаться со мной</h2>
+       
+        </div>
+    <div class="contact">
+        <h2>Связаться со мной</h2>
         <form action="/index.html">
           
             <label for="name">Ваше имя:</label>
             <input type="text" id="name" placeholder="Введите ваше имя...">
 
             <br>
-
             <label for="email">Ваш email:</label>
             <input type="email" id="email" placeholder="Введите ваш email...">
         
         <br>
-           
-
             <label for="text">Ваше сообщение:</label>
             <br>
             <textarea id="text" cols="15" rows="3"></textarea>
 
             <br>
-
              <input type="submit" value="Связаться">
         </form>
+        </div>
+    </div>
 </body>
 </html>
